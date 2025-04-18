@@ -14,14 +14,10 @@ body{
     color: black;
 }
 
-@media (max-width: 768px) {
-    .navigation .logo{
-        font-size: 10px;
-        font-weight: 200;
-        text-transform: uppercase;
-        text-decoration: none;
-        color: black;
-    }
+.navigation .burger{
+    display: none;
+    width: 24px;
+    height: 24px;
 }
 
 .navigation .links a{
@@ -395,4 +391,438 @@ body{
     display: flex;
     flex-direction: column;
     gap: 16px;
+}
+
+
+/*АДАПТИВ*/
+@media (max-width: 430px) {
+    .navigation .logo{
+        font-size: 20px;
+        font-weight: 600;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: black;
+    }
+
+    body{
+        padding: 0;
+        margin: 0;
+        font-family: 'Noto Sans', sans-serif;
+    
+    }
+
+    .navigation .links a{
+        display: none;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: black;
+        font-weight: 400;
+        font-size: 15px;
+        padding: 0px 24px;
+    }
+
+    .navigation .burger{
+        display: block;
+        width: 24px;
+        height: 24px;
+    }
+
+    .navigation{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 24px 24px;
+    }
+
+    /*ПЕРВЫЙ БЛОК*/
+    .section-one .left-section h1{
+        font-weight: 400;
+        font-size: 18px;
+        width: 360px;
+        text-transform: uppercase;
+    }
+
+    .section-one .left-section span{
+        font-weight: 600;
+        font-size: 18px;
+    }
+
+    .section-one .left-section img{
+        width: 360px;
+    }
+
+    .section-one .left-section p{
+        text-transform: uppercase;
+        font-weight: 200;
+        font-size: 16px;
+        width: 360px;
+    }
+
+    .section-one .left-section .btn{
+        width: 100px;
+        height: 40px;
+        background-color: transparent;
+        border-color: black;
+        text-transform: uppercase;
+        cursor: pointer;
+    }
+
+    .section-one .right-section img{
+        height: 400px;
+        width: 360px;
+    }
+
+    .section-one{
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        padding: 0px 24px;
+    }
+
+    /*ЛИНИЯ МЕЖДУ БЛОКАМИ*/
+    .line{
+        border-bottom: 1px black solid;
+        padding-top: 60px;
+        display: flex;
+        justify-content: space-between;
+        margin: 0px 24px;
+    }
+
+    /*ВТОРОЙ БЛОК*/
+    .section-two .right-section h1{
+        font-weight: 400;
+        font-size: 18px;
+        width: 360px;
+        text-transform: uppercase;
+    }
+
+    .section-two .right-section span{
+        font-weight: 600;
+        font-size: 16px;
+    }
+    .section-two .right-section p{
+        text-transform: uppercase;
+        font-weight: 200;
+        font-size: 16px;
+        width: 360px;
+    }
+
+    .section-two .left-section img{
+        width: 360px;
+    }
+
+    .section-two{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 60px 24px 0px 24px;
+    }
+
+    /*ТРЕТИЙ БЛОК*/
+    .section-three .left-section h1{
+        font-weight: 400;
+        font-size: 16px;
+        width: 360px;
+        text-transform: uppercase;
+    }
+
+    .section-three .left-section p{
+        text-transform: uppercase;
+        font-weight: 200;
+        font-size: 16px;
+        width: 360px;
+    }
+
+    .section-three .left-section span{
+        text-transform: uppercase;
+        font-weight: 400;
+        font-size: 16px;
+    }
+
+    .section-three .right-section img{
+        width: 360px;
+    }
+
+    .section-three{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 60px 24px 0px 24px;
+    }
+
+    /*ЧЕТВЕРТЫЙ БЛОК*/
+    .section-four h1{
+        font-size: 24px;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: white;
+        text-align: center;
+        padding-bottom: 32px;
+    }
+
+    .section-four {
+        background-color: #222127;
+        margin-top: 60px;
+        padding: 60px 0px;
+    }
+
+    .section-four .content .left-section .one-p img{
+        width: 40px;
+        height: 40px;
+    }
+
+    .section-four .content .left-section .two-p img{
+        width: 40px;
+        height: 40px;
+    }
+
+    .section-four .content .left-section .three-p img{
+        width: 40px;
+        height: 40px;
+    }
+
+    .section-four .content .left-section .four-p img{
+        width: 40px;
+        height: 40px;
+    }
+
+    .section-four .content .left-section .five-p img{
+        width: 40px;
+        height: 40px;
+    }
+
+    .section-four .content .left-section .one-p p{
+        font-size: 20px;
+        color: white;
+        font-weight: 200;
+        text-transform: uppercase;
+    }
+
+    .section-four .content .left-section .two-p p{
+        font-size: 20px;
+        color: white;
+        font-weight: 200;
+        text-transform: uppercase;
+    }
+
+    .section-four .content .left-section .three-p p{
+        font-size: 20px;
+        color: white;
+        font-weight: 200;
+        text-transform: uppercase;
+    }
+
+    .section-four .content .left-section .four-p p{
+        font-size: 20px;
+        color: white;
+        font-weight: 200;
+        text-transform: uppercase;
+    }
+
+    .section-four .content .left-section .five-p p{
+        font-size: 20px;
+        color: white;
+        font-weight: 200;
+        text-transform: uppercase;
+    }
+
+    .section-four .content .left-section .one-p{
+        display: flex;
+        align-items: center;
+        gap: 16px;
+    }
+
+    .section-four .content .left-section .two-p{
+        display: flex;
+        align-items: center;
+        gap: 16px;
+    }
+
+    .section-four .content .left-section .three-p{
+        display: flex;
+        align-items: center;
+        gap: 16px;
+    }
+
+    .section-four .content .left-section .four-p{
+        display: flex;
+        align-items: center;
+        gap: 16px;
+    }
+
+    .section-four .content .left-section .five-p{
+        display: flex;
+        align-items: center;
+        gap: 16px;
+    }
+
+    .section-four .content{
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        align-items: center;
+        padding: 0px 24px;
+    }
+
+    .section-four .content .right-section{
+        width: 360px;
+        height: auto;
+    }
+
+    .section-four .content .right-section img{
+        width: 360px;
+    }
+
+    /*ПЯТЫЙ БЛОК ФОРМА*/
+    .form h1{
+        text-transform: uppercase;
+        font-weight: 400;
+        font-size: 32px;
+        color: #323235;
+    }
+
+    .form .left-section input{
+        width: 260px;
+        height: 48px;
+        padding: 0px 20px;
+        font-size: 16px;
+        color: #979799;
+        border-radius: 0px;
+        border: 2px #2F2F32 solid;
+    }
+
+    .form .left-section button{
+        width: 305px;
+        height: 48px;
+        background-color: #39393B;
+        color: white;
+        font-size: 24px;
+        font-weight: 400;
+        border: none;
+        cursor: pointer;
+    }
+
+    .form .left-section{
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        padding-left: 0px;
+        order: 2;
+    }
+
+    .form .right-section{
+        order: 1;
+    }
+
+    .form .right-section img{
+        width: 365px;
+    }
+
+    .form .form-position{
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+        align-items: center;
+        padding-bottom: 60px;
+    }
+
+    .form{
+        margin: 60px 24px;
+        background-color: rgb(255, 255, 255);
+        box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.333);
+    }
+
+    /*ШЕСТОЙ БЛОК ФУТЕР*/
+    .footer .left-section h1{
+        font-size: 32px;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: #222127;
+    }
+
+    .footer .left-section a{
+        text-decoration: none;
+        color: #222127;
+        font-size: 20px;
+        font-weight: 200;
+    }
+
+    .footer .left-section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+    }
+
+    .footer .center-section a{
+        text-decoration: none;
+        color: #222127;
+        font-size: 20px;
+        font-weight: 200;
+    }
+
+    .footer .center-section{
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .footer .right-section .num-position a{
+        text-decoration: none;
+        color: #222127;
+        font-size: 20px;
+        font-weight: 200;
+    }
+
+    .footer .right-section .number{
+        display: flex;
+        gap: 16px;
+    }
+
+    .footer .right-section .street a{
+        text-decoration: none;
+        color: #222127;
+        font-size: 20px;
+        font-weight: 200;
+    }
+
+    .footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 60px 24x;
+        gap: 24px;
+    }
+
+    .footer .right-section .street{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+        width: 260px;
+        text-align: center;
+    }
+
+    .footer .right-section .street img{
+        width: 24px;
+    }
+
+    .footer .right-section .number div{
+        margin-left: 0%;
+    }
+
+    .footer .right-section .number img{
+        width: 24px;
+    }
+
+    .footer .right-section .number{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+        width: 260px;
+        text-align: center;
+    }
+
+
 }
