@@ -14,6 +14,16 @@ body{
     color: black;
 }
 
+@media (max-width: 768px) {
+    .navigation .logo{
+        font-size: 18px;
+        font-weight: 600;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: black;
+    }
+}
+
 .navigation .links a{
     text-decoration: none;
     text-transform: uppercase;
