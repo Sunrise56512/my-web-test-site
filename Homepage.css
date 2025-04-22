@@ -261,6 +261,8 @@
         margin: 0px;
         background: radial-gradient( #234759, #06131C);
         background-color: #06131C;
+        overflow: scroll;
+        scrollbar-width: none;
     }
 
     /*USER И ЛОГО*/
