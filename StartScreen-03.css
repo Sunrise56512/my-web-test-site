@@ -87,13 +87,13 @@
 
     .screen img{
         width: 100%;
-        height: auto;
+        height: 100%;
     }
 
     .screen .btn{
         position: absolute;
         left: 0;
-        bottom: 0;
+        bottom: 50px;
         margin: 0% 10%;
         width: 80%;
         height: 60px;
@@ -150,10 +150,10 @@
 
     .navigation{
         display: flex;
-        padding: 0px 170px;
+        padding: 0px 150px;
         gap: 10px;
         position: absolute;
         bottom: 0;
-        margin-bottom: 90px;
+        margin-bottom: 130px;
     }
 }
