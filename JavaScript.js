@@ -42,7 +42,7 @@ document.addEventListener('touchend', function (event) {
   }
   lastTouchTime = now;
 }, { passive: false });
-/*
+
 document.addEventListener('gesturestart', function (e) {
     e.preventDefault();
   }, { passive: false });
@@ -55,23 +55,3 @@ document.addEventListener('gesturestart', function (e) {
     e.preventDefault();
   }, { passive: false });
   
-*/
-
-let lastTouchTime = 0;
-
-document.addEventListener('touchend', function (e) {
-  const now = new Date().getTime();
-  const isImg = e.target.tagName.toLowerCase() === 'img';
-
-  // Если это не изображение — запрещаем двойной тап
-  if (!isImg && (now - lastTouchTime <= 300)) {
-    e.preventDefault();
-  }
-
-  lastTouchTime = now;
-}, { passive: false });
-
-// Запрет масштабирования жестами
-['gesturestart', 'gesturechange', 'gestureend'].forEach(evt =>
-  document.addEventListener(evt, e => e.preventDefault(), { passive: false })
-);
