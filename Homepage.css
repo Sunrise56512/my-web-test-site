@@ -254,6 +254,11 @@
         height: 100%;
     }
 
+    body::-webkit-scrollbar {
+        width: 0;
+        height: 0;
+    }
+
     body{
         font-family: "Roboto", sans-serif;
         color: #fff;
@@ -261,7 +266,6 @@
         margin: 0px;
         background: radial-gradient( #234759, #06131C);
         background-color: #06131C;
-        overflow: scroll;
         scrollbar-width: none;
     }
 
