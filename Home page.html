@@ -13,7 +13,7 @@
     <div class="head">
         <h1>HM2</h1>
         <div class="user">
-            <p>User</p>
+            <p id="result" >User</p>
             <img src="images/User-image.jpg">
         </div>
     </div>
@@ -32,7 +32,7 @@
             <p>На вывод</p>
             </div>
             <div class="background">
-                <p>1K</p>
+                <p id="money">0</p>
                 <img src="images/Монета.png">
             </div>
         </div>
@@ -52,14 +52,14 @@
         </div>
         <div class="streng">
             <img src="images/zap.svg" width="24px" height="24px">
-            <p>2000/2000</p>
+            <p><span id="point">2000</span>/2000</p>
         </div>
     </div>
     <div class="progress-bar">
         <div class="bar"></div>
     </div>
     <div class="button">
-        <img src="images/Начальный костюм.png">
+        <img id="buttonPlus" src="images/Начальный костюм.png" onclick="increment()">
     </div>
     <div class="games">
         <p>Игры</p>
@@ -105,6 +105,6 @@
         </a>
     </div>
     <div class="padding"></div>
-    <script src="JavaScript.js"></script>
+    <script src="JavaScript.js" defer></script>
 </body>
 </html>
