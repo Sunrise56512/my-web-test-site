@@ -35,14 +35,6 @@ function increment() {
 
 let lastTouchTime = 0;
 
-document.addEventListener('touchend', function (event) {
-  const now = new Date().getTime();
-  if (now - lastTouchTime <= 300) {
-    event.preventDefault(); // блокирует второй тап
-  }
-  lastTouchTime = now;
-}, { passive: false });
-
 document.addEventListener('gesturestart', function (e) {
     e.preventDefault();
   }, { passive: false });
