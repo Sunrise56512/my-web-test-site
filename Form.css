@@ -4,6 +4,7 @@ html, body{
 }
 
 body{
+    height: 923px;
     font-family: "Roboto", sans-serif;
     color: #fff;
     padding: 0px;
@@ -55,5 +56,5 @@ input::placeholder{
 .button{
     display: flex;
     justify-content: center;
-    padding-top: 550px;
+    padding-top: 500px;
 }
