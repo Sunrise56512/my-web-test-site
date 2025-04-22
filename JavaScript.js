@@ -33,3 +33,12 @@ function increment() {
     localStorage.setItem('money', money); // Сохраняем новое значение числа в localStorage
 }
 
+let lastTouchTime = 0;
+
+document.addEventListener('touchend', function (event) {
+  const now = new Date().getTime();
+  if (now - lastTouchTime <= 300) {
+    event.preventDefault(); // блокирует второй тап
+  }
+  lastTouchTime = now;
+}, { passive: false });
