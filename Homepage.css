@@ -425,12 +425,16 @@
     .navigation a{
         text-decoration: none;
         color: white;
-        font-size: 16px;
+        font-size: 14px;
+    }
+
+    .navigation p{
+        font-size: 14px;
     }
     
     .navigation nav{
         display: flex;
-        gap: 20px;
+        gap: 16px;
     }
 
     .navigation {
