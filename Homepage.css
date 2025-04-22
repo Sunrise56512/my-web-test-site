@@ -447,7 +447,7 @@
 
     /*НИЖНЕЕ МЕНЮ*/
     .menu{
-        width: 83%;
+        width: 80%;
         height: 100px;
         background-color: rgba(0, 0, 0, 0.2);
         backdrop-filter: 10px;
