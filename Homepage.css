@@ -385,13 +385,13 @@
     .button img{
         width: 80%;
         height: 80%;
-        overflow: hidden;
     }
 
     .button{
         padding-top: 48px;
         display: flex;
         justify-content: center;
+        overflow: hidden;
     }
 
     /*СЕКЦИЯ С ИГРАМИ*/
