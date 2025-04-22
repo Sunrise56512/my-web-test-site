@@ -385,6 +385,9 @@
     .button img{
         width: 80%;
         height: 80%;
+        touch-action: manipulation;  /* отключает double-tap zoom на многих браузерах */
+        user-select: none;           /* запрет выделения */
+        -webkit-user-drag: none;     /* запрет drag на iOS */
     }
 
     .button{
